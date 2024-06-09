@@ -41,7 +41,7 @@ def create_dataset(n, x_mean=10):
 
 """# MSE cost function Visualization"""
 
-def cost_visualization(input_data):
+def visualization3d(input_data):
   # define the vectorized MSE cost function
   def mse_cost(predictions, target):
       N = predictions.shape[0]
@@ -104,4 +104,4 @@ def cost_visualization(input_data):
                     width=700, height=700)
 
   fig.show()
-#cost_visualization(input_data=df)
+#visualization3d(input_data=df)
