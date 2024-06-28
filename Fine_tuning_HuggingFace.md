@@ -127,6 +127,9 @@ This code block sets up the environment for fine-tuning a DistilBERT model by in
 Ensure that the environment where this code is run supports all these operations, particularly the installations. This setup is typically used in a Jupyter notebook or a similar interactive Python environment.
 
 ```python
+#The target variable must be named as "label" - Verify it, before proceeding
+print(sample_data.columns)
+
 # Convert the pandas DataFrame `sample_data` to a Hugging Face `Dataset`
 Sample_data = Dataset.from_pandas(sample_data)
 
